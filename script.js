@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!proContainer4) return;
 
     // کپی آرایه و شافل کردنش
-    const shuffled = [...productsData.featured]
+     const shuffled = [...productsData.featured, ...productsData.newArrivals]
         .sort(() => Math.random() - 0.5);
 
     // انتخاب 4 محصول تصادفی
@@ -411,3 +411,4 @@ if (product) {
     }
 
     
+
