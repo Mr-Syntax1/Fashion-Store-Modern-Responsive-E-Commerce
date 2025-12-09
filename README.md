@@ -5,7 +5,6 @@ A modern and fully responsive fashion e-commerce template built with **HTML, CSS
 
 ## 🚀 Live Demo  
 🔗 **[Click here to view the demo](#)**  
-*(Replace # with your GitHub Pages link once published)*
 
 ---
 
