@@ -1268,6 +1268,51 @@ footer .copyright{
     cursor: pointer;
 }
 
+/* ==== toast start ==== */
+.toast {
+  position: fixed;
+  bottom: -50px;               /* ابتدا خارج از صفحه */
+  right: 20px;
+  background: #cc3f3f;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 11px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 9999;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: toastIn 0.5s ease forwards,toastOut 0.5s ease 1.8s forwards; /* خروج بعد از 1.8 ثانیه */
+}
+
+/* انیمیشن ورود */
+@keyframes toastIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    bottom: 20px;
+  }
+}
+
+/* انیمیشن خروج */
+@keyframes toastOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+/* ==== toast end ==== */
+
+
 /* ==== responsiveb big screen Start ==== */
 @media screen and (max-width: 1385px){
     #banner3{
@@ -1588,5 +1633,6 @@ footer .copyright{
     }
 
 }
+
 
 /* ==== responsiveb small screen End ==== */
