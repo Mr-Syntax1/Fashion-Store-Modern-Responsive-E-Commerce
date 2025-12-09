@@ -461,6 +461,10 @@ i:hover{
     background-position: center;
 }
 
+#banner button{
+    transition: all 0.3s ease;
+}
+
 #banner h4{
     color: #fff;
     font-size: 16px;
@@ -1285,6 +1289,7 @@ footer .copyright{
   animation: toastIn 0.5s ease forwards,toastOut 0.5s ease 1.8s forwards; /* خروج بعد از 1.8 ثانیه */
 }
 
+
 /* انیمیشن ورود */
 @keyframes toastIn {
   0% {
@@ -1636,4 +1641,3 @@ footer .copyright{
 
 
 /* ==== responsiveb small screen End ==== */
-
