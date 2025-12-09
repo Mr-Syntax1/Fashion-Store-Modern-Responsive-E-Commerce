@@ -166,6 +166,7 @@
   }
 ]
 };
+
 // Product containers for other pages
 
 const proContainer4 = document.querySelector(".pro-container4");
@@ -212,10 +213,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!proContainer4) return;
 
-    // فقط 4 محصول اول
-    const limited = productsData.newArrivals.slice(0, 4);
+    // کپی آرایه و شافل کردنش
+    const shuffled = [...productsData.featured]
+        .sort(() => Math.random() - 0.5);
 
-    limited.forEach(product => {
+    // انتخاب 4 محصول تصادفی
+    const randomFour = shuffled.slice(0, 4);
+
+    randomFour.forEach(product => {
         const card = document.createElement('div');
         card.className = "pro";
         card.onclick = () => window.location.href = `sprouduct.html?id=${product.id}`;
@@ -236,6 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
         proContainer4.appendChild(card);
     });
 });
+
 
 
 // Image zoom effect
