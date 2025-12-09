@@ -3,6 +3,9 @@ A modern and fully responsive fashion e-commerce template built with **HTML, CSS
 
 ---
 
+<img width="1889" height="892" alt="Screenshot6" src="https://github.com/user-attachments/assets/74fe6a53-9e0c-4578-84ed-1d7031de692b" />
+
+
 ## 🚀 Live Demo  
 🔗 **[Click here to view the demo](https://mr-syntax1.github.io/Fashion-Store-Modern-Responsive-E-Commerce-Template/)**  
 
