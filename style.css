@@ -183,7 +183,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #E3E6F3;
+    background: #e09a58;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     z-index: 999;
     position: sticky;
@@ -243,7 +243,7 @@ i{
 }
 
 i:hover{
-    color: #d49318d7;
+    color: #088178;
 }
 /* ==== Header End ==== */
 
@@ -302,7 +302,7 @@ i:hover{
 }
 
 #feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.21);
+    box-shadow: 10px 10px 55px rgba(255, 153, 0, 0.205);
 }
 
 #feature .fe-box img{
@@ -456,7 +456,7 @@ i:hover{
     text-align: center;
     background-image: url("./img/banner/b2.jpg");
     width: 100%;
-    height: 40vh;
+    height: 55vh;
     background-size: cover;
     background-position: center;
 }
@@ -504,7 +504,7 @@ i:hover{
 
 #sm-banner .banner-box:hover{
     scale: calc(1.012);
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0px 8px 15px rgba(218, 130, 16, 0.4);
 }
 
 #sm-banner .banner-box h4{
@@ -561,7 +561,7 @@ i:hover{
 
 #banner3 .banner-box:hover{
     scale: calc(1.03);
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.21);
+    box-shadow: 10px 10px 55px rgba(255, 153, 0, 0.233);
 }
 
 #banner3 .banner-box2{
@@ -978,6 +978,25 @@ footer .copyright{
 
 /* ==== contact Start ==== */
 
+#contact-header{
+    background-image: url("./img/about/contact.jpg");
+    width: 100%;
+    height: 68vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-position: top 65% right 0;
+    object-fit: cover;
+    padding: 14px;
+}
+#contact-header h2,
+#contact-header p{
+    color: #fff;
+    display: none;
+}
+
 #contact-details{
     display: flex;
     align-items: center;
@@ -1108,7 +1127,7 @@ footer .copyright{
 /* ==== Cart Start ==== */
 
 .yellow-icon {
-    color: #daa325;
+    color: #088178;
 }
 
 #cart {
@@ -1255,6 +1274,10 @@ footer .copyright{
         display: flex;
         justify-content: space-around;
     }
+    #contact-header{
+        height: 55vh;
+    }
+
 }
 
 @media screen and (min-width: 800px){
@@ -1276,6 +1299,9 @@ footer .copyright{
     #prodetails .single-pro-image{
         width: 55%;
     }
+        #contact-header{
+        height: 40vh;
+    }
 }
 /* ==== responsiveb big screen End ====  */
 
@@ -1295,7 +1321,7 @@ footer .copyright{
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #e3e6f3;
+        background-color: #d49961;
         box-shadow: 0 40px 60px rgba(0,0,0,0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s ease-in-out;
@@ -1452,6 +1478,7 @@ footer .copyright{
     }
 
 
+
 }
 /* ==== responsiveb medium screen End ==== */
 
@@ -1477,6 +1504,7 @@ footer .copyright{
     #header{
         padding: 10px 30px;
     }
+    
 
     h1{
         font-size: 38px;
@@ -1487,7 +1515,7 @@ footer .copyright{
     }
     #hero{
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 65%;
     }
 
     #feature .fe-box{

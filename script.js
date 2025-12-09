@@ -1,174 +1,3 @@
-// script.js - Main JavaScript file
-
-// Product containers for other pages
-const allproducts = document.querySelector(".all-products");
-const proContainer4 = document.querySelector(".pro-container4");
-
-// All products for shop page
-if (allproducts) {
-    fetch("products.json")
-    .then(res => {
-        if (!res.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return res.json();
-    })
-    .then(data => {
-        const all = [...data.featured, ...data.newArrivals];
-
-        all.forEach(product => {
-            allproducts.innerHTML += `<div class="pro" onclick="window.location.href='sprouduct.html';">
-                <img src="${product.image}" alt="${product.title}" loading="lazy">
-                <div class="des">
-                    <span>${product.brand}</span>
-                    <h5>${product.title}</h5>
-                    <div class="star">${"<i class='fas fa-star'></i>".repeat(product.stars)}</div>
-                    <h4>$${product.price}</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>`;
-        });
-    })
-    .catch(error => {
-        console.error('Error loading products:', error);
-    });
-}
-
-// Take 4 newArrivals for homepage
-if (proContainer4) {
-    fetch("products.json")
-    .then(res => {
-        if (!res.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return res.json();
-    })
-    .then(data => {
-        const limited = data.newArrivals.slice(0, 4);
-
-        limited.forEach(product => {
-            proContainer4.innerHTML += `
-                <div class="pro" onclick="window.location.href='sprouduct.html';">
-                    <img src="${product.image}" alt="${product.title}" loading="lazy">
-                    <div class="des">
-                        <span>${product.brand}</span>
-                        <h5>${product.title}</h5>
-                        <div class="star">
-                            ${"<i class='fas fa-star'></i>".repeat(product.stars)}
-                        </div>
-                        <h4>$${product.price}</h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            `;
-        });
-    })
-    .catch(error => {
-        console.error('Error loading new arrivals:', error);
-    });
-}
-
-// Image zoom effect
-const bgImageEl = document.querySelector('#hero');
-
-if (bgImageEl) {
-    window.addEventListener('scroll', updateImage);
-    
-    function updateImage() {
-        if (window.innerWidth <= 800) return;
-    
-        if (window.innerWidth <= 1150) {
-            bgImageEl.style.backgroundSize = 150 + window.pageYOffset / 22 + "%";
-        } else {
-            bgImageEl.style.backgroundSize = 100 + window.pageYOffset / 22 + "%";
-        }
-    }
-    
-    // Initial call
-    updateImage();
-}
-
-// Mobile menu functionality
-const bar = document.querySelector("#bar");
-const nev = document.querySelector("#navbor");
-const closeBtn = document.querySelector("#close");
-
-if (bar && nev) {
-    // Opening hamburger
-    bar.addEventListener("click", () => {
-        nev.classList.toggle("active");
-    });
-}
-
-if (closeBtn && nev) {
-    // Closing hamburger
-    closeBtn.addEventListener("click", () => {
-        nev.classList.remove("active");
-    });
-}
-
-// Close menu when clicking outside on mobile
-document.addEventListener('click', (event) => {
-    if (window.innerWidth <= 799 && nev && nev.classList.contains('active')) {
-        const isClickInsideNav = nev.contains(event.target);
-        const isClickOnBar = bar && bar.contains(event.target);
-        
-        if (!isClickInsideNav && !isClickOnBar) {
-            nev.classList.remove('active');
-        }
-    }
-});
-
-// Responsive check
-function checkResponsive() {
-    // Add any responsive checks here if needed
-}
-
-// Check on resize
-window.addEventListener('resize', checkResponsive);
-
-// Initial check
-checkResponsive();
-
-// Preload images for better UX
-function preloadImages() {
-    const imageUrls = [
-        './img/hero4.png',
-        './img/button.png',
-        './img/features/f1.png',
-        './img/features/f2.png',
-        './img/features/f3.png',
-        './img/features/f4.png',
-        './img/features/f5.png',
-        './img/features/f6.png'
-    ];
-    
-    imageUrls.forEach(url => {
-        const img = new Image();
-        img.src = url;
-    });
-}
-
-// Start preloading when page loads
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', preloadImages);
-} else {
-    preloadImages();
-}
-
-
-
-   // گرفتن id از URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = parseInt(urlParams.get("id"));
-
-    // المنت‌های HTML
-    const mainImg = document.getElementById("mainImag");
-    const smallImagesContainer = document.getElementById("smallImagesContainer");
-    const productTitle = document.getElementById("productTitle");
-    const productPrice = document.getElementById("productPrice");
-    const productDesc = document.getElementById("productDesc");
-
     // داده‌های محصولات (مستقیماً از کد JSON که در HTML دارید)
     const productsData = {
         "featured": [
@@ -336,11 +165,184 @@ if (document.readyState === 'loading') {
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   }
 ]
-    };
+};
+// Product containers for other pages
+
+const proContainer4 = document.querySelector(".pro-container4");
+
+// All products for shop page
+document.addEventListener('DOMContentLoaded', function () {
+    const allproducts = document.querySelector(".all-products");
+
+    if (!allproducts) return;
+
+    // ترکیب هر دو آرایه
+    const combined = [
+        ...productsData.featured,
+        ...productsData.newArrivals
+    ];
+    
+
+    combined.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'pro';
+        card.onclick = () => window.location.href = `sprouduct.html?id=${product.id}`;
+
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.title}" loading="lazy">
+            <div class="des">
+                <span>${product.brand}</span>
+                <h5>${product.title}</h5>
+                <div class="star">
+                    ${"★".repeat(product.stars)}${"☆".repeat(5 - product.stars)}
+                </div>
+                <h4>$${product.price}</h4>
+            </div>
+            <a href="#" class="cart"><i class="fal fa-shopping-cart"></i></a>
+        `;
+
+        allproducts.appendChild(card);
+    });
+});
+
+
+// Take 4 newArrivals for homepage
+document.addEventListener('DOMContentLoaded', function () {
+    const proContainer4 = document.querySelector(".pro-container4");
+
+    if (!proContainer4) return;
+
+    // فقط 4 محصول اول
+    const limited = productsData.newArrivals.slice(0, 4);
+
+    limited.forEach(product => {
+        const card = document.createElement('div');
+        card.className = "pro";
+        card.onclick = () => window.location.href = `sprouduct.html?id=${product.id}`;
+
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.title}" loading="lazy">
+            <div class="des">
+                <span>${product.brand}</span>
+                <h5>${product.title}</h5>
+                <div class="star">
+                    ${"★".repeat(product.stars)}${"☆".repeat(5 - product.stars)}
+                </div>
+                <h4>$${product.price}</h4>
+            </div>
+            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        `;
+
+        proContainer4.appendChild(card);
+    });
+});
+
+
+// Image zoom effect
+const bgImageEl = document.querySelector('#hero');
+
+if (bgImageEl) {
+    window.addEventListener('scroll', updateImage);
+    
+    function updateImage() {
+        if (window.innerWidth <= 800) return;
+    
+        if (window.innerWidth <= 1150) {
+            bgImageEl.style.backgroundSize = 150 + window.pageYOffset / 22 + "%";
+        } else {
+            bgImageEl.style.backgroundSize = 100 + window.pageYOffset / 22 + "%";
+        }
+    }
+    
+    // Initial call
+    updateImage();
+}
+
+// Mobile menu functionality
+const bar = document.querySelector("#bar");
+const nev = document.querySelector("#navbor");
+const closeBtn = document.querySelector("#close");
+
+if (bar && nev) {
+    // Opening hamburger
+    bar.addEventListener("click", () => {
+        nev.classList.toggle("active");
+    });
+}
+
+if (closeBtn && nev) {
+    // Closing hamburger
+    closeBtn.addEventListener("click", () => {
+        nev.classList.remove("active");
+    });
+}
+
+// Close menu when clicking outside on mobile
+document.addEventListener('click', (event) => {
+    if (window.innerWidth <= 799 && nev && nev.classList.contains('active')) {
+        const isClickInsideNav = nev.contains(event.target);
+        const isClickOnBar = bar && bar.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnBar) {
+            nev.classList.remove('active');
+        }
+    }
+});
+
+// Responsive check
+function checkResponsive() {
+    // Add any responsive checks here if needed
+}
+
+// Check on resize
+window.addEventListener('resize', checkResponsive);
+
+// Initial check
+checkResponsive();
+
+// Preload images for better UX
+function preloadImages() {
+    const imageUrls = [
+        './img/hero4.png',
+        './img/button.png',
+        './img/features/f1.png',
+        './img/features/f2.png',
+        './img/features/f3.png',
+        './img/features/f4.png',
+        './img/features/f5.png',
+        './img/features/f6.png'
+    ];
+    
+    imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+    });
+}
+
+// Start preloading when page loads
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', preloadImages);
+} else {
+    preloadImages();
+}
+
+
+
+   // گرفتن id از URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = parseInt(urlParams.get("id"));
+
+    // المنت‌های HTML
+    const mainImg = document.getElementById("mainImag");
+    const smallImagesContainer = document.getElementById("smallImagesContainer");
+    const productTitle = document.getElementById("productTitle");
+    const productPrice = document.getElementById("productPrice");
+    const productDesc = document.getElementById("productDesc");
 
     // پیدا کردن محصول با id
     const allProducts = [...productsData.featured, ...productsData.newArrivals];
     const product = allProducts.find(p => p.id === productId);
+
 
 if (product) {
     // مقداردهی اطلاعات اصلی
@@ -365,9 +367,7 @@ if (product) {
             <option>Large</option>
         </select>
         <input type="number" value="1" min="1" max="9">
-        <button class="normal" onclick="window.location.href='./cart.html'">
-            Add To Cart
-        </button>
+    <button class="normal" onclick="window.location.href='./cart.html'">Add To Cart</button>
         
     `;
 
@@ -403,3 +403,5 @@ if (product) {
         productPrice.textContent = "please try open it in home page";
         productDesc.textContent = "";
     }
+
+    
