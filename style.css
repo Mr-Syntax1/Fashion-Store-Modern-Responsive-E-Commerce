@@ -1273,7 +1273,7 @@ footer .copyright{
   position: fixed;
   bottom: -50px;               /* ابتدا خارج از صفحه */
   right: 20px;
-  background: #cc3f3f;
+  background: #eb9e57;
   color: #fff;
   padding: 15px 20px;
   border-radius: 11px;
@@ -1636,3 +1636,4 @@ footer .copyright{
 
 
 /* ==== responsiveb small screen End ==== */
+
