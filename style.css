@@ -1265,12 +1265,76 @@ footer .copyright{
 /* ==== Cart End ==== */
 
 .extra-ui button{
-    margin: 10px 5px;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .remove i{
     cursor: pointer;
 }
+
+.details-star{
+    font-size: 30px;
+    margin: 0px 0px 9px 0;
+}
+
+.size-select{
+    display: flex;
+    align-items: center;
+}
+.size-select select{
+    margin: 0px 40px 0px 0px;
+}
+.size-select input{
+    margin: 0px 0px 0px 5px;
+}
+
+/* ==== quantity start ==== */
+
+.quantity-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 2px;
+}
+
+.qty-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.qty-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.1);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty-input {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* ==== quantity end ==== */
+
 
 /* ==== toast start ==== */
 .toast {
@@ -1288,6 +1352,7 @@ footer .copyright{
   transform: translateY(20px) scale(0.95);
   animation: toastIn 0.5s ease forwards,toastOut 0.5s ease 1.8s forwards; /* خروج بعد از 1.8 ثانیه */
 }
+
 
 
 /* انیمیشن ورود */
