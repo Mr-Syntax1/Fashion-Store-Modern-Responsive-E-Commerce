@@ -6,6 +6,8 @@
     "brand": "adidas",
     "title": "Cartoon Astronaut T-shirt",
     "price": 78.99,
+    "minQty": 1,
+    "maxQty": 7,
     "image": "./img/products/f1.jpg",
     "stars": 5,
     "category": "t-shirts",
@@ -16,6 +18,8 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 65.23,
+    "minQty": 1,
+    "maxQty": 11,
     "image": "./img/products/f2.jpg",
     "stars": 3,
     "category": "sportswear",
@@ -26,8 +30,10 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 75.21,
+    "minQty": 1,
+    "maxQty": 14,
     "image": "./img/products/f3.jpg",
-    "stars": 5,
+    "stars": 4,
     "category": "sportswear",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -36,6 +42,8 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 73.00,
+    "minQty": 1,
+    "maxQty": 12,
     "image": "./img/products/f4.jpg",
     "stars": 4,
     "category": "sportswear",
@@ -46,6 +54,8 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 81.99,
+    "minQty": 1,
+    "maxQty": 19,
     "image": "./img/products/f5.jpg",
     "stars": 2,
     "category": "sportswear",
@@ -56,8 +66,10 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 92.32,
+    "minQty": 1,
+    "maxQty": 5,
     "image": "./img/products/f6.jpg",
-    "stars": 1,
+    "stars": 4,
     "category": "sportswear",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -66,8 +78,10 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 59.00,
+    "minQty": 1,
+    "maxQty": 17,
     "image": "./img/products/f7.jpg",
-    "stars": 5,
+    "stars": 2,
     "category": "sportswear",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -76,6 +90,8 @@
     "brand": "adidas",
     "title": "Sport Performance T-shirt",
     "price": 91.00,
+    "minQty": 1,
+    "maxQty": 22,
     "image": "./img/products/f8.jpg",
     "stars": 3,
     "category": "sportswear",
@@ -89,8 +105,10 @@
     "brand": "nike",
     "title": "Premium Cotton T-shirt",
     "price": 81.85,
+    "minQty": 1,
+    "maxQty": 6,
     "image": "./img/products/n1.jpg",
-    "stars": 5,
+    "stars": 3,
     "category": "t-shirts",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -99,6 +117,8 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 67.25,
+    "minQty": 1,
+    "maxQty": 22,
     "image": "./img/products/n2.jpg",
     "stars": 2,
     "category": "sportswear",
@@ -109,6 +129,8 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 56.99,
+    "minQty": 1,
+    "maxQty": 19,
     "image": "./img/products/n3.jpg",
     "stars": 4,
     "category": "sportswear",
@@ -119,8 +141,10 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 77.00,
+    "minQty": 1,
+    "maxQty": 13,
     "image": "./img/products/n4.jpg",
-    "stars": 3,
+    "stars": 1,
     "category": "sportswear",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -129,8 +153,10 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 89.00,
+    "minQty": 1,
+    "maxQty": 20,
     "image": "./img/products/n5.jpg",
-    "stars": 1,
+    "stars": 2,
     "category": "sportswear",
     "description": "The Men's Fashion T-Shirt is a classic and timeless piece of clothing that is perfect for any occasion. It is made from a soft and comfortable material and is perfect for any season.It is made from a soft and comfortable material and is perfect for any season."
   },
@@ -139,6 +165,8 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 44.00,
+    "minQty": 1,
+    "maxQty": 11,
     "image": "./img/products/n6.jpg",
     "stars": 5,
     "category": "sportswear",
@@ -149,6 +177,8 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 91.50,
+    "minQty": 1,
+    "maxQty": 9,
     "image": "./img/products/n7.jpg",
     "stars": 4,
     "category": "sportswear",
@@ -159,6 +189,8 @@
     "brand": "nike",
     "title": "Sport Performance T-shirt",
     "price": 53.25,
+    "minQty": 1,
+    "maxQty": 17,
     "image": "./img/products/n8.jpg",
     "stars": 4,
     "category": "sportswear",
@@ -167,11 +199,8 @@
 ]
 };
 
-// Product containers for other pages
+// ==== All products for shop page start ====
 
-const proContainer4 = document.querySelector(".pro-container4");
-
-// All products for shop page
 document.addEventListener('DOMContentLoaded', function () {
     const allproducts = document.querySelector(".all-products");
 
@@ -184,35 +213,59 @@ document.addEventListener('DOMContentLoaded', function () {
     
 
     combined.forEach(product => {
-        const card = document.createElement('div');
-        card.className = 'pro';
-        card.onclick = () => window.location.href = `sprouduct.html?id=${product.id}`;
+    const card = document.createElement('div');
+    card.className = 'pro';
 
-        card.innerHTML = `
-            <img src="${product.image}" alt="${product.title}" loading="lazy">
-            <div class="des">
-                <span>${product.brand}</span>
-                <h5>${product.title}</h5>
-                <div class="star">
-                    ${"★".repeat(product.stars)}${"☆".repeat(5 - product.stars)}
-                </div>
-                <h4>$${product.price}</h4>
+    // کلیک روی خود کارت → برو به صفحه محصول
+    card.onclick = (e) => {
+        // اگر روی آیکون سبد خرید کلیک کرد، نره به صفحه محصول
+        if (e.target.closest('.cart-link')) return;
+        window.location.href = `sprouduct.html?id=${product.id}`;
+    };
+
+    card.innerHTML = `
+        <img src="${product.image}" alt="${product.title}" loading="lazy">
+        <div class="des">
+            <span>${product.brand}</span>
+            <h5>${product.title}</h5>
+            <div class="star">
+                ${"★".repeat(product.stars)}${"☆".repeat(5 - product.stars)}
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-        `;
+            <h4>$${product.price}</h4>
+        </div>
+        <a class="cart-link">
+            <i class="fal fa-shopping-cart cart"></i>
+        </a>
+    `;
 
-        allproducts.appendChild(card);
-    });
+    const cartLink = card.querySelector('.cart-link');
+cartLink.addEventListener("click", () => {
+    showToast(" ✅ Item added to your cart! ");
+    setTimeout(() => {
+        window.location.href = './cart.html';
+    }, 1500);
 });
 
+function showToast(text) {
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = text;
+    document.body.appendChild(toast);
 
-// Take 4 newArrivals for homepage
+    setTimeout(() => toast.remove(), 2000);
+}
+
+    allproducts.appendChild(card);
+});
+});
+
+// ==== All products for shop page end ====
+
+// ==== Product containers for other pages start ====
+
 document.addEventListener('DOMContentLoaded', function () {
     const proContainer4 = document.querySelector(".pro-container4");
-
-    if (!proContainer4) return;
-
-    // کپی آرایه و شافل کردنش
+    // کپی و شافل کل محصولات
     const shuffled = [...productsData.featured, ...productsData.newArrivals]
         .sort(() => Math.random() - 0.5);
 
@@ -220,9 +273,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const randomFour = shuffled.slice(0, 4);
 
     randomFour.forEach(product => {
+
         const card = document.createElement('div');
         card.className = "pro";
-        card.onclick = () => window.location.href = `sprouduct.html?id=${product.id}`;
+
+        // کلیک روی خود کارت → برو صفحه محصول
+        card.onclick = (e) => {
+            if (e.target.closest('.cart-link')) return;
+            window.location.href = `sprouduct.html?id=${product.id}`;
+        };
 
         card.innerHTML = `
             <img src="${product.image}" alt="${product.title}" loading="lazy">
@@ -234,16 +293,44 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <h4>$${product.price}</h4>
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <a class="cart-link">
+                <i class="fal fa-shopping-cart cart"></i>
+            </a>
         `;
+
+        // گرفتن دکمه سبد خرید
+        const cartLink = card.querySelector('.cart-link');
+
+        cartLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            showToast(" ✅ Item added to your cart! ");
+
+            setTimeout(() => {
+                window.location.href = './cart.html';
+            }, 1500);
+        });
 
         proContainer4.appendChild(card);
     });
 });
 
 
+// تابع Toast
+function showToast(text) {
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = text;
+    document.body.appendChild(toast);
 
-// Image zoom effect
+    setTimeout(() => toast.remove(), 2000);
+}
+
+// ==== Product containers for other pages end ====
+
+// ==== Image zoom effect start ===
+
 const bgImageEl = document.querySelector('#hero');
 
 if (bgImageEl) {
@@ -262,8 +349,10 @@ if (bgImageEl) {
     // Initial call
     updateImage();
 }
+// ==== Image zoom effect end ====
 
-// Mobile menu functionality
+
+// ==== Hamburger start ====
 const bar = document.querySelector("#bar");
 const nev = document.querySelector("#navbor");
 const closeBtn = document.querySelector("#close");
@@ -298,40 +387,48 @@ document.addEventListener('click', (event) => {
 function checkResponsive() {
     // Add any responsive checks here if needed
 }
-
 // Check on resize
 window.addEventListener('resize', checkResponsive);
 
 // Initial check
 checkResponsive();
 
-// Preload images for better UX
-function preloadImages() {
-    const imageUrls = [
-        './img/hero4.png',
-        './img/button.png',
-        './img/features/f1.png',
-        './img/features/f2.png',
-        './img/features/f3.png',
-        './img/features/f4.png',
-        './img/features/f5.png',
-        './img/features/f6.png'
-    ];
-    
-    imageUrls.forEach(url => {
+// ==== Hamburger end ====
+
+// ==== Preload images for better UX start ====
+function preloadAllImages() {
+    const urls = new Set();
+
+    // 1. همه تصاویر <img>
+    document.querySelectorAll('img').forEach(img => {
+        if (img.src) urls.add(img.src);
+    });
+
+    // 2. تصاویر پس‌زمینه CSS
+    const elements = document.querySelectorAll('*');
+    elements.forEach(el => {
+        const bg = window.getComputedStyle(el).backgroundImage;
+        const match = /url\(["']?(.+?)["']?\)/.exec(bg);
+        if (match && match[1]) urls.add(match[1]);
+    });
+
+    // 3. بارگذاری تصاویر
+    urls.forEach(url => {
         const img = new Image();
         img.src = url;
     });
 }
 
-// Start preloading when page loads
+// شروع پیش‌بارگذاری وقتی DOM آماده شد
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', preloadImages);
+    document.addEventListener('DOMContentLoaded', preloadAllImages);
 } else {
-    preloadImages();
+    preloadAllImages();
 }
+// ==== Preload images for better UX end ====
 
 
+// ==== find and get product url and make product page start ====
 
    // گرفتن id از URL
     const urlParams = new URLSearchParams(window.location.search);
@@ -341,10 +438,11 @@ if (document.readyState === 'loading') {
     const mainImg = document.getElementById("mainImag");
     const smallImagesContainer = document.getElementById("smallImagesContainer");
     const productTitle = document.getElementById("productTitle");
+    const starsContainer = document.querySelector(".star");
     const productPrice = document.getElementById("productPrice");
     const productDesc = document.getElementById("productDesc");
 
-    // پیدا کردن محصول با id
+    // پیدا کردن محصول با id ==
     const allProducts = [...productsData.featured, ...productsData.newArrivals];
     const product = allProducts.find(p => p.id === productId);
 
@@ -353,6 +451,7 @@ if (product) {
     // مقداردهی اطلاعات اصلی
     mainImg.src = product.image;
     productTitle.textContent = product.title;
+    starsContainer.innerHTML = "★".repeat(product.stars) + "☆".repeat(5 - product.stars);
     productPrice.textContent = `$${product.price}`;
     productDesc.textContent = product.description;
 
@@ -365,6 +464,7 @@ extraUI.classList.add("extra-ui");
 
 extraUI.innerHTML = `
   <br>
+  <div class="size-select">                
   <select>
     <option disabled selected>Select size</option>
     <option>XL</option>
@@ -372,13 +472,19 @@ extraUI.innerHTML = `
     <option>Small</option>
     <option>Large</option>
   </select>
-  <input type="number" value="1" min="1" max="9">
+<div class="quantity-wrapper">
+  <span class="qty-btn qty-minus">−</span>
+  <input type="number" class="qty-input" value="1" min="1" max="12">
+  <span class="qty-btn qty-plus">+</span>
+</div>
+
+</div>
   <button class="normal">Add To Cart</button>
 `;
 
 detailsContainer.appendChild(extraUI);
 
-
+// اضافه کردن alert برای صفحه جزعیات
 const btn = extraUI.querySelector("button.normal");
 
 btn.addEventListener("click", () => {
@@ -394,7 +500,7 @@ function showToast(text) {
     toast.className = "toast";
     toast.textContent = text;
     document.body.appendChild(toast);
-    
+
     setTimeout(() => toast.remove(), 2500);
 }
 
@@ -429,7 +535,29 @@ function showToast(text) {
         productPrice.textContent = "please try open it in home page";
         productDesc.textContent = "";
     }
-
+// ==== find and get product url and make product page end ====
     
+// ==== quantity selector start ====
+const minus = document.querySelector('.qty-minus');
+const plus = document.querySelector('.qty-plus');
+const input = document.querySelector('.qty-input');
 
+input.min = product.minQty;
+input.max = product.maxQty;
+input.value = product.minQty;
 
+minus.addEventListener('click', () => {
+  let value = parseInt(input.value) || 0;
+  if (value > parseInt(input.min)) {
+    input.value = value - 1;
+  }
+});
+
+plus.addEventListener('click', () => {
+  let value = parseInt(input.value) || 0;
+  if (value < parseInt(input.max)) {
+    input.value = value + 1;
+  }
+});
+
+// ==== quantity selector end ====
