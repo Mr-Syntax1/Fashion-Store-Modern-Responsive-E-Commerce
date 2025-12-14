@@ -7,7 +7,7 @@ A modern and fully responsive fashion e-commerce built with **HTML, CSS, JavaScr
 
 
 ## 🚀 Live Demo  
-🔗 **[Click here to view](https://mr-syntax1.github.io/Fashion-Store-Modern-Responsive-E-Commerce-Template/)**  
+🔗 **[Click here to view](https://mr-syntax1.github.io/Fashion-Store-Modern-Responsive-E-Commerce/)**  
 
 ---
 
