@@ -1,5 +1,5 @@
 # 🌟 Fashion Store  
-A modern and fully responsive fashion e-commerce template built with **HTML, CSS, JavaScript**, and **JSON-based dynamic content**. This project includes all essential pages for a professional online store, featuring dynamic product rendering, a stylish UI, and smooth interactions.
+A modern and fully responsive fashion e-commerce built with **HTML, CSS, JavaScript**, and **JSON-based dynamic content**. This project includes all essential pages for a professional online store, featuring dynamic product rendering, a stylish UI, and smooth interactions.
 
 ---
 
